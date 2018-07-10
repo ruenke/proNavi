@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>产品导航</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.css">
+		<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+			.page-top {
+				background: #2C4A93;
+				position: relative;
+				height: 80px;
+			}
+			
+			.bu-logo {
+				float: left;
+				text-indent: -9999px;
+				width: 210px;
+				height: 40px;
+				background: url(assets/svgs/Logo.svg) no-repeat;
+				margin: 20px 5px;
+			}
+			
+			.menu-item {
+				display: inline-block;
+				width: 115px;
+				height: 80px;
+				text-align: center;
+				font-family: MicrosoftYaHei;
+				font-size: 14px;
+				color: #FFFFFF;
+				padding: 30px 20px;
+				margin: 0px -2px;
+			}
+			
+			.menu-item:hover {
+				background: rgba(255, 255, 255, 0.10);
+			}
+			
+			.merchant {
+				display: block;
+				font-family: MicrosoftYaHei;
+				font-size: 20px;
+				color: rgba(0, 0, 0, 0.90);
+				letter-spacing: 0;
+				text-align: left;
+				margin: 20px 5px;
+			}
+			
+			.pro-logo {
+				display: block;
+				margin-top: 20px;
+				width: 100px;
+				height: 20px;
+			}
+			
+			.sz-logo {
+				background: url(assets/svgs/sz-logo.svg);
+			}
+			
+			.zh-logo {
+				background: url(assets/svgs/zh-logo.svg);
+			}
+			
+			.sf-logo {
+				background: url(assets/svgs/sf-logo.svg);
+			}
+			
+			.row {
+				margin-right: 0px;
+				margin-left: 0px;
+				margin-top: 11px;
+				height: 100px;
+			}
+			
+			.col-sm-4,
+			.col-sm-12 {
+				background: #FFFFFF;
+				box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.20), inset -1px 0 0 0 #E0E3E5;
+				border-radius: 4px 0 0 4px;
+				height: 80px;
+			}
+			.edi-type-std {
+				display:inline-block;
+				width:40px;
+				height: 40px;
+				padding: 10px 12px 10px 13px;
+				/*opacity: 0.1;*/
+				margin:20px 0px;
+				background: #E7E9EE;
+				border-radius: 20px;
+				color: #161617;
+			}
+			.edi-type-dd {
+				display:inline-block;
+				width:40px;
+				height: 40px;
+				padding: 10px 12px 10px 10px;
+				/*opacity: 0.1;*/
+				margin:20px 0px;
+				background: #E7E9EE;
+				border-radius: 20px;
+				color: #161617;
+			}
+			.edi-type-mb {
+				display:inline-block;
+				width:40px;
+				height: 40px;
+				padding: 10px 12px 10px 16px;
+				/*opacity: 0.1;*/
+				margin:20px 0px;
+				background: #E7E9EE;
+				border-radius: 20px;
+				color: #161617;
+			}
+			.edi-icon {
+				display: inline-block;
+				font-family: FontAwesome;
+				font-size: 20px;
+				letter-spacing: 0;
+				text-align: left;
+				line-height: 20px;
+				width: 15px;
+				height: 20px;
+			}
+			.edi-name {
+				margin: 30px 5px;
+			}
+			.env {
+				float: right;
+				margin: 25px 0px;
+				border: 1px solid #E0E3E5;;
+				width: 60px;
+				height: 30px;
+				padding: 6px 12px;
+			}
+			.env-name {
+				float: right;
+				font-family: MicrosoftYaHei;
+				font-size: 12px;
+				color: rgba(0,0,0,0.70);
+				line-height: 18px;
+				width: 24px;
+				height: 18px;
+			}
+			.env-icon {
+				float: left;
+				width: 7px;
+				height: 18px;
+				line-height: 20px;
+				font-family: FontAwesome;
+				font-size: 7px;
+			}
+			.icon-yf {
+				color: #DE1618;
+			}
+			.icon-yy {
+				color: #FAC116;
+			}
+			.icon-zs {
+				color: #1AC82C;
+			}
+		</style>
+	</head>
+
+	<body style="background: #F2F3F4;">
+		<div class="box">
+			<div class="page-top">
+				<span class="bu-logo"></span>
+				<span class="menu-item">
+					<i class="fa fa-map-signs" aria-hidden="true"></i>
+					<span>产品导航</span>
+				</span>
+				<span class="menu-item">
+					<i class="fa fa-tachometer" aria-hidden="true"></i>
+					<span>监控中心</span>
+				</span>
+				<span class="menu-item">
+					<i class="fa fa-sliders" aria-hidden="true"></i>
+					<span>配置中心</span>
+				</span>
+			</div>
+			<div>
+				<span class="merchant">经营商家</span>
+				<span class="pro-logo sz-logo"></span>
+				<div class="row">
+					<div class="col-sm-4">
+						<span class="edi-type-std">
+							<i class="fa fa-user edi-icon" aria-hidden="true"></i>
+						</span>
+						<span class="edi-name">标准版</span>
+						<span class="env">
+							<i class="fa fa-circle env-icon icon-zs" aria-hidden="true"></i>
+							<span class="env-name">正式</span>
+						</span>
+						<span class="env">
+							<i class="fa fa-circle env-icon icon-yy" aria-hidden="true"></i>
+							<span class="env-name">运营</span>
+						</span>
+						<span class="env">
+							<i class="fa fa-circle env-icon icon-yf" aria-hidden="true"></i>
+							<span class="env-name">预发</span>
+						</span>
+					</div>
+					<div class="col-sm-4">
+						<span class="edi-type-dd">
+							<i class="fa fa-users edi-icon" aria-hidden="true"></i>
+						</span>
+						<span class="edi-name">多店版</span>
+						<span class="env">
+							<i class="fa fa-circle env-icon icon-zs" aria-hidden="true"></i>
+							<span class="env-name">正式</span>
+						</span>
+						<span class="env">
+							<i class="fa fa-circle env-icon icon-yy" aria-hidden="true"></i>
+							<span class="env-name">运营</span>
+						</span>
+						<span class="env">
+							<i class="fa fa-circle env-icon icon-yf" aria-hidden="true"></i>
+							<span class="env-name">预发</span>
+						</span>
+					</div>
+					<div class="col-sm-4">
+						<span class="edi-type-mb">
+							<i class="fa fa-mobile edi-icon" aria-hidden="true"></i>
+						</span>
+						<span class="edi-name">移动版</span>
+						<span class="env">
+							<i class="fa fa-circle env-icon icon-zs" aria-hidden="true"></i>
+							<span class="env-name">正式</span>
+						</span>
+						<span class="env">
+							<i class="fa fa-circle env-icon icon-yy" aria-hidden="true"></i>
+							<span class="env-name">运营</span>
+						</span>
+						<span class="env">
+							<i class="fa fa-circle env-icon icon-yf" aria-hidden="true"></i>
+							<span class="env-name">预发</span>
+						</span>
+					</div>
+				</div>
+				<span class="merchant">自营商家</span>
+				<span class="pro-logo zh-logo"></span>
+				<div class="row">
+					<div class="col-sm-4">
+						<span class="edi-type-std">
+							<i class="fa fa-user edi-icon" aria-hidden="true"></i>
+						</span>
+						<span class="edi-name">标准版</span>
+						<span class="env">
+							<i class="fa fa-circle env-icon icon-zs" aria-hidden="true"></i>
+							<span class="env-name">正式</span>
+						</span>
+						<span class="env">
+							<i class="fa fa-circle env-icon icon-yy" aria-hidden="true"></i>
+							<span class="env-name">运营</span>
+						</span>
+						<span class="env">
+							<i class="fa fa-circle env-icon icon-yf" aria-hidden="true"></i>
+							<span class="env-name">预发</span>
+						</span>
+					</div>
+					<div class="col-sm-4">
+						<span class="edi-type-mb">
+							<i class="fa fa-mobile edi-icon" aria-hidden="true"></i>
+						</span>
+						<span class="edi-name">移动版</span>
+						<span class="env">
+							<i class="fa fa-circle env-icon icon-zs" aria-hidden="true"></i>
+							<span class="env-name">正式</span>
+						</span>
+						<span class="env">
+							<i class="fa fa-circle env-icon icon-yy" aria-hidden="true"></i>
+							<span class="env-name">运营</span>
+						</span>
+						<span class="env">
+							<i class="fa fa-circle env-icon icon-yf" aria-hidden="true"></i>
+							<span class="env-name">预发</span>
+						</span>
+					</div>
+					<div class="col-sm-4">
+					</div>
+				</div>
+				<span class="pro-logo sf-logo"></span>
+				<div class="row">
+					<div class="col-sm-12" style="padding: 30px 0px;">
+						<p style="text-align: center;">敬请期待...</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
